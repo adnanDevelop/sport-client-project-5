@@ -13,12 +13,8 @@ module.exports = {
       gray: "#7A7773",
       "white" : "#fff",
       "black" : "#000",
+      "gray" : "#7A7773",
       "dark-black": "##010203",
-      orange: "#ff7849",
-      green: "#13ce66",
-      "graydark": "#273444",
-      gray: "#8492a6",
-      "gray-light": "#d3dce6",
     },
     fontFamily: {
       primary: ["Barlow Condensed", "sans-serif"],

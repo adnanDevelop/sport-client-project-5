@@ -11,6 +11,14 @@
   .btn-primary {
     @apply uppercase font-primary text-white bg-red px-6 py-3 font-semibold flex items-center;
   }
+
+  .red-badge {
+    @apply px-2 py-1 bg-red text-white font-secondary text-[14px] font-semibold uppercase inline-block;
+  }
+
+  h2 {
+    @apply md:text-[40px] text-[35px] font-primary uppercase text-[#010203] font-bold leading-none;
+  }
 }
 
 /* CUSTOM CSS */
@@ -18,4 +26,28 @@
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
     url("/public/image/hero-img.jpeg") no-repeat center;
   background-size: cover;
+}
+
+.btn-primary-outline {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #e31c23;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 10px 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+  text-transform: uppercase;
+  border: 1px solid #e31c23;
+}
+
+.btn-primary-outline:hover {
+  background-color: #e31c23;
+  color: white;
+}
+
+.swiper-button-prev , .swiper-button-next {
+  display: none !important;
 }
