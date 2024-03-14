@@ -9,7 +9,7 @@
     @apply font-primary  overflow-x-hidden;
   }
   .btn-primary {
-    @apply uppercase font-primary text-white bg-red px-6 py-3 font-semibold flex items-center;
+    @apply uppercase font-primary text-white bg-red px-6 py-3 font-semibold flex items-center transition duration-300 hover:scale-105;
   }
 
   .red-badge {
@@ -48,6 +48,27 @@
   color: white;
 }
 
-.swiper-button-prev , .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   display: none !important;
+}
+
+/* STORE SECTION */
+.gradient {
+  background-image: radial-gradient(
+    circle at center,
+    rgb(255, 27, 56) 0%,
+    rgb(156, 8, 27) 100%
+  );
+}
+
+.join-img {
+  clip-path: polygon(25% 0% , 100% 0% , 100% 100% , 0% 100% );
+}
+
+@media (max-width : 576px) {
+  .join-img {
+    clip-path: polygon(25% 0% , 100% 0% , 100% 100% , 0% 100% , 0% 60% );
+  }
+
 }

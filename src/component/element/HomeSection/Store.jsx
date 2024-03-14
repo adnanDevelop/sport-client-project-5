@@ -1,5 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,13 +25,13 @@ const Store = () => {
       <section>
         <img
           src="/image/home/store/store-img.png"
-          className="w-full h-auto"
+          className="w-full md:h-[400px] h-[300px] object-cover"
           alt=""
         />
       </section>
       {/* CARD SECTION */}
-      <section className="md:px-[40px] px-[20px] lg:py-[80px] py-[60px] bg-red">
-        <div className="store-header flex items-center justify-between">
+      <section className="md:px-[40px] px-[20px] lg:py-[80px] py-[60px] gradient">
+        <div className="store-header flex items-center justify-between relative">
           <div className="store-title">
             <h2 className="text-white font-bold font-primary uppercase ">
               we provide best apparel,
@@ -52,7 +54,6 @@ const Store = () => {
             slidesPerView={4}
             spaceBetween={20}
             navigation={true}
-            grabCursor={true}
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -72,13 +73,14 @@ const Store = () => {
               disableOnInteraction: false,
             }}
             modules={[Navigation, Autoplay]}
-            className="mySwiper"
+            className="mySwiper overflow-y-auto"
           >
+            <SwiperBtn />
             {productImg.map((element, index) => {
               return (
                 <SwiperSlide key={index} className="my-5">
-                  <div className="relative">
-                    <div className="animation w-[100px] h-[300px] bg-[#F45D71] absolute  top-[-1rem] left-[50%] skew-x-[-15deg] translate-x-[-50%] z-[-1]"></div>
+                  <div className="relative group cursor-pointer">
+                    <div className="animation w-[100px] h-[350px] bg-[#F45D71] absolute  top-[-3rem] left-[50%] skew-x-[-15deg] translate-x-[-50%] z-[-1] opacity-0 transition duration-300 group-hover:opacity-100"></div>
                     <div className="p-4 border rounded-[20px] border-white flex items-center justify-center">
                       <img src={element} alt="" />
                     </div>
@@ -87,9 +89,39 @@ const Store = () => {
               );
             })}
           </Swiper>
+          {/* BUTTON */}
+          <div className="button mt-6 grid place-items-center ">
+            <button className=" uppercase font-primary text-red bg-white px-6 py-3 font-semibold flex items-center transition duration-300 hover:scale-105">
+              Learn more{" "}
+              <MdOutlineKeyboardDoubleArrowRight className="ms-1 text-[20px]" />
+            </button>
+          </div>
         </div>
       </section>
     </main>
+  );
+};
+
+const SwiperBtn = () => {
+  const swiper = useSwiper();
+
+  return (
+    <div className=" lg:block hidden">
+      <div className="swiper-btns w-full flex items-center justify-end gap-x-4 pe-8 ">
+        <button
+          className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
+          onClick={() => swiper.slideNext()}
+        >
+          <FaArrowLeftLong />
+        </button>
+        <button
+          className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
+          onClick={() => swiper.slidePrev()}
+        >
+          <FaArrowRightLong />
+        </button>
+      </div>
+    </div>
   );
 };
 
