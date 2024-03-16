@@ -6,10 +6,13 @@ import AcademyLocation from "../element/HomeSection/AcademyLocation";
 import Store from "../element/HomeSection/Store";
 import Joinus from "../element/HomeSection/Joinus";
 import Gallery from "../element/HomeSection/Gallery";
+import Contact from "../element/HomeSection/Contact";
+import Navbar from "../NavFooter/Navbar";
 
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <Hero />
       <AboutClub />
       <Store />
@@ -17,6 +20,7 @@ const Home = () => {
       <Joinus />
       <Gallery />
       <AcademyLocation />
+      <Contact />
       <div className="w-full h-screen "></div>
     </div>
   );

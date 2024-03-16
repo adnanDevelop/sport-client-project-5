@@ -62,13 +62,29 @@
   );
 }
 
-.join-img {
-  clip-path: polygon(25% 0% , 100% 0% , 100% 100% , 0% 100% );
+.about-gradient {
+  background-image: radial-gradient(circle at center, #ff1b38 , #9c081c);
+  background-size: cover; /* Optionally add this to cover the entire element */
 }
 
-@media (max-width : 576px) {
-  .join-img {
-    clip-path: polygon(25% 0% , 100% 0% , 100% 100% , 0% 100% , 0% 60% );
-  }
+.join-img {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
 
+.contact-btn {
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%, 0% 100%);
+}
+
+/* STORE SECTION */
+/* CUSTOM CSS */
+.store_section {
+  background: linear-gradient(to right, #dc1731e9 5%, #ffffff00 70%),
+    url("/public/image/store/header-bg.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  .join-img {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 60%);
+  }
 }

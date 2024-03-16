@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
-const Navbar = () => {
+const NavbarTwo = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
@@ -76,7 +76,7 @@ const Navbar = () => {
             alt=""
           />
           <img
-            src="/image/sublogo.png"
+            src="/image/sublogo-dark.png"
             className="w-[55px] h-auto object-cover"
             alt=""
           />
@@ -90,8 +90,8 @@ const Navbar = () => {
               <li key={index}>
                 <Link
                   to={`/${element === "home" ? "" : element}`}
-                  className={`uppercase text-[15px] font-primary font-semibold transition duration-500 hover:text-red ${
-                    activeLink === element ? "text-red" : "text-white"
+                  className={`uppercase text-white text-[15px] pb-2 nav-two-link font-primary font-semibold relative before:absolute before:w-[0%] before:h-[2px] before:left-0 before:bottom-0 before:transition before:duration-300 transition duration-500  hover:before:bg-white hover:before:w-[100%] ${
+                    activeLink === element ? "before:bg-white" : "text-white"
                   }`}
                   onClick={() => navClickFunc(element)}
                 >
@@ -102,7 +102,7 @@ const Navbar = () => {
           })}
 
           <li>
-            <button className="btn-primary">
+            <button className="uppercase font-primary text-red bg-white px-6 py-3 font-semibold flex items-center transition duration-300 hover:scale-105">
               Learn more{" "}
               <MdOutlineKeyboardDoubleArrowRight className="ms-1 text-[20px]" />
             </button>
@@ -171,4 +171,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarTwo;

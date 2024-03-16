@@ -3,8 +3,8 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Gallery = () => {
   return (
-    <main className="gallery-section md:px-[40px] px-[20px] md:py-[80px] py-[60px]">
-      <section className="flex items-center justify-between">
+    <main className="gallery-section  md:py-[80px] py-[60px]">
+      {/* <section className="flex items-center justify-between md:px-[40px] px-[20px]">
         <div className="gallery-title">
           <span className="red-badge mb-4">our gallery</span>
           <h2>gallery, memories we shared</h2>
@@ -21,6 +21,16 @@ const Gallery = () => {
           </button>
         </div>
       </section>
+      <section className="w-full gallery-img-section grid grid-cols-2 h-[550px] mt-4 ">
+        <div className="gallery-img flex">
+          <img src="/image/home/gallery/img-4.png" className="w-auto h-auto" alt="" />
+          <img src="/image/home/gallery/img-2.png" className="max-w-[400px] h-auto" alt="" />
+        </div>
+        <div className="gallery-img flex">
+          <img src="/image/home/gallery/img-1.png" alt="" />
+          <img src="/image/home/gallery/img-3.png" alt="" />
+        </div>
+      </section> */}
     </main>
   );
 };

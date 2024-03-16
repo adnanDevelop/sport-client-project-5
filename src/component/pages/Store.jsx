@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import StoreHeader from "../element/StoreSection/StoreHeader";
+import KitSection from "../element/StoreSection/KitSection";
+import Product from "../element/StoreSection/Product";
+import Navbar from "../NavFooter/Navbar";
 
 const Store = () => {
   return (
-    <div>Store</div>
-  )
-}
+    <>
+      <Navbar />
+      <StoreHeader />
+      <KitSection />
+      <Product />
+    </>
+  );
+};
 
-export default Store
+export default Store;
