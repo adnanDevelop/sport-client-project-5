@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +17,11 @@
   }
 
   h2 {
-    @apply md:text-[40px] text-[35px] font-primary uppercase text-[#010203] font-bold leading-none;
+    @apply md:text-[40px] text-[35px] font-primary uppercase text-[#010203] font-semibold leading-none;
+  }
+
+  p {
+    @apply font-text;
   }
 }
 
@@ -63,15 +67,24 @@
 }
 
 .about-gradient {
-  background-image: radial-gradient(circle at center, #ff1b38 , #9c081c);
+  background-image: radial-gradient(circle at center, #ff1b38, #9c081c);
   background-size: cover; /* Optionally add this to cover the entire element */
+}
+
+.hospitality-gradient {
+  background-image: linear-gradient(to bottom , #c20d25ef , #000);
 }
 
 .join-img {
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
+.team-card,
 .contact-btn {
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%, 0% 100%);
+}
+
+.model-content {
   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%, 0% 100%);
 }
 
@@ -83,6 +96,11 @@
   background-size: cover;
 }
 
+@media (max-width: 998px) {
+  .model-content {
+    clip-path: none;
+  }
+}
 @media (max-width: 576px) {
   .join-img {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 60%);

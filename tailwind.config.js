@@ -19,6 +19,7 @@ module.exports = {
     fontFamily: {
       primary: ["Barlow Condensed", "sans-serif"],
       secondary: ["Arsenal", "serif"],
+      text: ["Roboto", "sans-serif"],
     },
     extend: {},
   },

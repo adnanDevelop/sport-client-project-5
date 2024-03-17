@@ -21,7 +21,6 @@ const Home = () => {
       <Gallery />
       <AcademyLocation />
       <Contact />
-      <div className="w-full h-screen "></div>
     </div>
   );
 };
