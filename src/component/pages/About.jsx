@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../NavFooter/Navbar";
 import AboutHeader from "../element/AboutSection/AboutHeader";
 import NavbarTwo from "../NavFooter/NavbarTwo";
 import AboutMission from "../element/AboutSection/AboutMission";

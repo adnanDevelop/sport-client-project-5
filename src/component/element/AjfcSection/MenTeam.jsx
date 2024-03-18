@@ -49,7 +49,7 @@ const MenTeam = () => {
           </div>
           {/* LEFT SECTION */}
           <div className="col-span-4 lg:mt-1 mt-8">
-            <div className="team-card gradient max-w-[350px] lg:max-h-[350px] h-[350px] lg:ms-auto pt-6 relative">
+            <div className="team-card gradient max-w-[350px] w-full lg:max-h-[350px] h-[350px] lg:ms-auto pt-6 relative">
               <img
                 src="/image/ajfc/team/img-1.png"
                 className="w-[250px] lg:ms-auto absolute right-8 bottom-0"
@@ -263,7 +263,7 @@ const MenTeam = () => {
           </div>
           {/* RIGHT SECTION */}
           <div className="col-span-4 lg:mt-1 mt-8">
-            <div className="team-card bg-black max-w-[350px] lg:max-h-[350px] h-[350px] lg:ms-auto pt-6 relative">
+            <div className="team-card-two bg-black max-w-[350px] lg:max-h-[350px] h-[350px] lg:ms-auto pt-6 relative">
               <img
                 src="/image/ajfc/team/img-1.png"
                 className="w-[250px] lg:ms-auto absolute right-8 bottom-0"
@@ -312,7 +312,7 @@ const MenTeam = () => {
           </div>
           {/* RIGHT SECTION */}
           <div className="col-span-4 lg:mt-1 mt-8">
-            <div className="team-card gradient max-w-[350px] lg:max-h-[350px] h-[350px] lg:ms-auto pt-6 relative">
+            <div className="team-card-two gradient max-w-[350px] lg:max-h-[350px] h-[350px] lg:ms-auto pt-6 relative">
               <img
                 src="/image/ajfc/team/img-1.png"
                 className="w-[250px] lg:ms-auto absolute right-8 bottom-0"

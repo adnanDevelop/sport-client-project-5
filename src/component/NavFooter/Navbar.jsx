@@ -51,8 +51,7 @@ const Navbar = () => {
   const navItems = [
     "home",
     "about",
-    "locations",
-    "ajfc",
+    "Staff",
     "store ",
     "contact us",
     "hospitality",

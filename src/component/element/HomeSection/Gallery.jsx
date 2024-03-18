@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+// import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Gallery = () => {
   return (

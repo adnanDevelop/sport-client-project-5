@@ -76,10 +76,17 @@
 }
 
 .join-img {
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 85% 0%, 100% 100%, 0% 100%);
 }
 
-.team-card,
+.team-card {
+  clip-path: polygon(20% 0%, 100% 0%, 84% 100%, 0% 100%, 0% 100%);
+}
+
+.team-card-two {
+  clip-path: polygon(24% 0%, 100% 0%, 80% 100%, 0% 100%, 0% 100%);
+}
+
 .contact-btn {
   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%, 0% 100%);
 }
