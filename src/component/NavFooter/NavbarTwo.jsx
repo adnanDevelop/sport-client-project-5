@@ -53,6 +53,7 @@ const NavbarTwo = () => {
     "about",
     "Staff",
     "store ",
+    "Academy",
     "contact us",
     "hospitality",
   ];

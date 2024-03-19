@@ -53,6 +53,7 @@ const Navbar = () => {
     "about",
     "Staff",
     "store ",
+    "Academy",
     "contact us",
     "hospitality",
   ];

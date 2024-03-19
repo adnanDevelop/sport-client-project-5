@@ -486,7 +486,7 @@ const Program = () => {
       </div>
 
 
-      <div className=" ms-[20px] my-[30px] bg-red w-[300px] p-4 flex items-center justify-between">
+      <div className="ms-[20px] my-[30px] bg-red w-[300px] p-4 flex items-center justify-between">
         <div>
           <img className="w-[100px]" src="/image/academy/program/logo-one.png" alt="" />
         </div>

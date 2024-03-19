@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 
-const Store = () => {
+const AcademyStore = () => {
   const productImg = [
     "/image/home/store/img-1.png",
     "/image/home/store/img-2.png",
@@ -20,7 +20,7 @@ const Store = () => {
   ];
 
   const swiperRef = useRef(null);
-  const swiper = useSwiper()
+  const swiper = useSwiper();
   const handlePrevClick = () => {
     if (swiperRef.current) {
       swiperRef.current.swiper.slidePrev();
@@ -111,7 +111,12 @@ const Store = () => {
             })}
           </Swiper>
           {/* BUTTON */}
-          <div className="button mt-6 grid place-items-center ">
+          <div className="button mt-6 flex flex-col items-center justify-center max-w-[900px] mx-auto ">
+            <p className="text-white font-secondary text-center mb-4 text-[18px]">
+              We are proud to announce we were signed to New Balance as of late
+              2023 and they are our main kit manufacturers across all 4 youth
+              teams and the academy set up.
+            </p>
             <button className=" uppercase font-primary text-red bg-white px-6 py-3 font-semibold flex items-center transition duration-300 hover:scale-105">
               Learn more{" "}
               <MdOutlineKeyboardDoubleArrowRight className="ms-1 text-[20px]" />
@@ -123,6 +128,4 @@ const Store = () => {
   );
 };
 
-
-
-export default Store;
+export default AcademyStore;

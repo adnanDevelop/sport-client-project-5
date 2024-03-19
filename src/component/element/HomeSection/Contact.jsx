@@ -3,22 +3,22 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <main className="contact-section relative lg:flex items-center flex-wrap">
-        {/* <img src="/image/home/contact/contact-bg.png" className="absolute z-[-1] max-w-[780px] h-[600px]" alt="" /> */}
+    <main className="contact-section relative md:grid grid-cols-2 mt-[40px]">
+        {/* <img src="/image/home/contact/contact-bg.png" className="absolute lg:block hidden z-[-1] max-w-[780px] h-[600px]" alt="" /> */}
       <section
         className="w-full contact-content-section py-[60px] md:ps-[40px] ps-[20px] px-[20px] bg-cover bg-center bg-no-repeat bg-[#F6F5F8]"
         // style={{ backgroundImage: "url('')" }}
       >
         <span className="red-badge mb-3">enquire here</span>
         <h2>contact us</h2>
-        <div className="contact-btn flex items-center  mt-6">
-          <button className="w-[160px] h-[40px] inline-block font-[600] text-black bg-red uppercase text-[14px] font-primary transition duration-300 hover:scale-105 contact-btn hover:bg-red hover:text-white">
+        <div className="w-full h-[50px] flex items-center  mt-6 ">
+          <button className="px-[50px] h-[40px] font-[600] text-white z-[10] contact-btn bg-red uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             london
           </button>
-          <button className="w-[160px] h-[40px] inline-block font-[600] text-black bg-red uppercase text-[14px] font-primary transition duration-300 hover:scale-105 contact-btn hover:bg-red hover:text-white">
+          <button className="px-[50px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             manchester
           </button>
-          <button className="w-[160px] h-[40px] inline-block font-[600] text-black bg-red uppercase text-[14px] font-primary transition duration-300 hover:scale-105 contact-btn hover:bg-red hover:text-white">
+          <button className="px-[50px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             nottingham
           </button>
         </div>
@@ -57,8 +57,8 @@ const Contact = () => {
         </form>
       </section>
       <section>
-        <img src="/image/home/contact/contact-img.png" className="lg:block hidden" alt="" />
-        <img src="/image/home/contact/contact-img-two.png" className="lg:hidden block w-full" alt="" />
+        {/* <img src="/image/home/contact/contact-img.png" className="lg:block hidden" alt="" /> */}
+        <img src="/image/home/contact/contact-img-two.png" className="w-full md:h-[120vh] object-cover" alt="" />
       </section>
     </main>
   );
