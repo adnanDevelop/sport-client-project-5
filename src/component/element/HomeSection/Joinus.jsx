@@ -3,7 +3,7 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Joinus = () => {
   return (
-    <div className="  bg-[#F6F5F8] lg:grid grid-cols-8">
+    <div className="sm:pt-0 pt-[30px]  bg-[#F6F5F8] lg:grid grid-cols-8">
       <div className="content-section lg:py-[80px] md:ps-[40px] ps-[20px] lg:pe-0 md:pe-[40px] pe-[20px] col-span-4">
         <span className="red-badge mb-4">join us now</span>
         <h2>

@@ -76,7 +76,8 @@
 }
 
 .join-img {
-  clip-path: polygon(25% 0%, 85% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  width: 100%;
 }
 
 .team-card {

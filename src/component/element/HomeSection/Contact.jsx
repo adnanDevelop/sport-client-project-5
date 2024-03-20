@@ -11,14 +11,14 @@ const Contact = () => {
       >
         <span className="red-badge mb-3">enquire here</span>
         <h2>contact us</h2>
-        <div className="w-full h-[50px] flex items-center  mt-6 ">
-          <button className="px-[50px] h-[40px] font-[600] text-white z-[10] contact-btn bg-red uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
+        <div className="w-full h-[50px] flex items-center flex-wrap  mt-6 ">
+          <button className="sm:px-[50px] w-[110px] h-[40px] font-[600] text-white z-[10] contact-btn bg-red uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             london
           </button>
-          <button className="px-[50px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
+          <button className="sm:px-[50px] w-[110px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             manchester
           </button>
-          <button className="px-[50px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
+          <button className="sm:px-[50px] w-[110px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             nottingham
           </button>
         </div>

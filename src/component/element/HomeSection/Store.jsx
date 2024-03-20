@@ -20,7 +20,7 @@ const Store = () => {
   ];
 
   const swiperRef = useRef(null);
-  const swiper = useSwiper()
+  const swiper = useSwiper();
   const handlePrevClick = () => {
     if (swiperRef.current) {
       swiperRef.current.swiper.slidePrev();
@@ -54,19 +54,21 @@ const Store = () => {
               </span>
             </h2>
           </div>
-          <div className="swiper-btns flex items-center justify-end gap-x-4 pe-8">
-            <button
-              onClick={handlePrevClick}
-              className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
-            >
-              <FaArrowLeftLong />
-            </button>
-            <button
-              onClick={handleNextClick}
-              className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
-            >
-              <FaArrowRightLong />
-            </button>
+          <div className="sm:block hidden">
+            <div className="swiper-btns flex items-center justify-end gap-x-4 pe-8">
+              <button
+                onClick={handlePrevClick}
+                className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
+              >
+                <FaArrowLeftLong />
+              </button>
+              <button
+                onClick={handleNextClick}
+                className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
+              >
+                <FaArrowRightLong />
+              </button>
+            </div>
           </div>
         </div>
         <div className="product-slider mt-6 overflow-y-auto">
@@ -122,7 +124,5 @@ const Store = () => {
     </main>
   );
 };
-
-
 
 export default Store;
