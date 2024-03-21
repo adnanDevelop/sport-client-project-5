@@ -14,7 +14,7 @@ const AboutMission = () => {
           <div className="club_img col-span-7 lg:block hidden">
             <img
               src="/image/about/mission-img.png"
-              className="max-w-[500px] h-auto mx-auto"
+              className="sm:max-w-[550px] max-w-[500px] h-auto "
               alt=""
             />
           </div>
@@ -39,13 +39,13 @@ const AboutMission = () => {
                 by being a positive alternative to the high risk and negative
                 lifestyles that currently involve too many
               </p>
-              <p className=" text-[15px] text-gray font-medium mb-2 ">
+              <p className=" text-[15px] text-gray font-medium mb-26 ">
                 Our initial scope will be across the boroughs of Nottingham but,
                 as a successful model develops, we hope to spread our activities
                 as far as we can. Gang related activities and violence blight
                 too many young lives and we are a positive alternative.
               </p>
-              <button type="button" className="btn-primary-outline">
+              <button type="button" className="btn-primary-outline mt-8">
                 JOIN US{" "}
                 <MdOutlineKeyboardDoubleArrowRight className="ms-3 text-[20px]" />
               </button>
@@ -54,12 +54,13 @@ const AboutMission = () => {
           <div className="club_img lg:hidden block  mt-8 ">
             <img
               src="/image/about/mission-img.png"
-              className="md:max-w-[400px] max-w-[300px] h-auto"
+              className="max-w-[500px] w-full h-auto"
               alt=""
             />
           </div>
         </div>
       </div>
+      {/* SECTION TWO */}
       <div className="w-full md:px-[40px] px-[20px] pb-[60px]">
         <div className="club_section lg:max-w-[1100px] w-full mx-auto lg:grid grid-cols-12">
           <div className="club_content col-span-4 lg:flex flex-col justify-center items-center">
@@ -81,7 +82,7 @@ const AboutMission = () => {
                 approach combining fitness, sporting activity and mentoring aims
                 to address the underlying causes of negative lifestyles.
               </p>
-              <button type="button" className="btn-primary-outline">
+              <button type="button" className="btn-primary-outline mt-8">
                 JOIN US{" "}
                 <MdOutlineKeyboardDoubleArrowRight className="ms-3 text-[20px]" />
               </button>
@@ -90,14 +91,14 @@ const AboutMission = () => {
           <div className="club_img col-span-8 lg:block hidden">
             <img
               src="/image/about/aim-img.png"
-              className="max-w-[500px] h-auto mx-auto"
+              className="sm:max-w-[550px] max-w-[500px] h-auto mx-auto"
               alt=""
             />
           </div>
-          <div className="club_img lg:hidden block  mt-8 ">
+          <div className="club_img lg:hidden block mt-8">
           <img
               src="/image/about/aim-img.png"
-              className="md:max-w-[400px] max-w-[300px] h-auto"
+              className="max-w-[500px] w-full h-auto"
               alt=""
             />
           </div>

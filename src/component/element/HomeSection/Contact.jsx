@@ -3,7 +3,7 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <main className="contact-section relative md:grid grid-cols-2 mt-[40px]">
+    <main className="contact-section relative lg:grid grid-cols-2 mt-[40px]">
         {/* <img src="/image/home/contact/contact-bg.png" className="absolute lg:block hidden z-[-1] max-w-[780px] h-[600px]" alt="" /> */}
       <section
         className="w-full contact-content-section py-[60px] md:ps-[40px] ps-[20px] px-[20px] bg-cover bg-center bg-no-repeat bg-[#F6F5F8]"
@@ -11,18 +11,18 @@ const Contact = () => {
       >
         <span className="red-badge mb-3">enquire here</span>
         <h2>contact us</h2>
-        <div className="w-full h-[50px] flex items-center flex-wrap  mt-6 ">
-          <button className="sm:px-[50px] w-[110px] h-[40px] font-[600] text-white z-[10] contact-btn bg-red uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
+        <div className="w-full sm:h-[50px] flex items-center flex-wrap sm:gap-y-1 gap-y-2 mt-6 ">
+          <button className="sm:w-[140px] w-[110px] h-[40px] font-[600] text-white z-[10] contact-btn bg-red uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             london
           </button>
-          <button className="sm:px-[50px] w-[110px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
+          <button className="sm:w-[140px] w-[110px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             manchester
           </button>
-          <button className="sm:px-[50px] w-[110px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
+          <button className="sm:w-[140px] w-[110px] h-[40px] font-[600] text-black bg-white contact-btn uppercase text-[14px] font-primary transition duration-300 hover:bg-red hover:text-white">
             nottingham
           </button>
         </div>
-        <form className="mt-4 w-full flex flex-col gap-y-4">
+        <form className="sm:mt-5 mt-10 w-full flex flex-col gap-y-4">
           <div>
             <input
               type="text"

@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
+import { Navigation, Autoplay , Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation, Autoplay } from "swiper/modules";
+import 'swiper/css/pagination';
 
 const AcademyStore = () => {
   const productImg = [
@@ -42,7 +43,7 @@ const AcademyStore = () => {
             <h2 className="text-white font-bold font-primary uppercase ">
               we provide best apparel,
             </h2>
-            <h2 className="flex items-center  text-white font-bold font-primary uppercase ">
+            <h2 className="flex items-center text-white font-bold font-primary uppercase ">
               visit our store
               <span className="ms-4 flex">
                 <img src="/image/home/store/logoone.png" alt="" />{" "}
@@ -54,19 +55,22 @@ const AcademyStore = () => {
               </span>
             </h2>
           </div>
-          <div className="swiper-btns flex items-center justify-end gap-x-4 pe-8">
-            <button
-              onClick={handlePrevClick}
-              className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
-            >
-              <FaArrowLeftLong />
-            </button>
-            <button
-              onClick={handleNextClick}
-              className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
-            >
-              <FaArrowRightLong />
-            </button>
+          {/* BUTTONS */}
+          <div className="sm:block hidden">
+            <div className="swiper-btns flex items-center justify-end gap-x-4 pe-8">
+              <button
+                onClick={handlePrevClick}
+                className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
+              >
+                <FaArrowLeftLong />
+              </button>
+              <button
+                onClick={handleNextClick}
+                className="text-red bg-white transition duration-300 hover:bg-black hover:text-white text-[15px] w-[50px] h-[40px] flex items-center justify-center skew-x-[-10deg]"
+              >
+                <FaArrowRightLong />
+              </button>
+            </div>
           </div>
         </div>
         <div className="product-slider mt-6 overflow-y-auto">
@@ -75,6 +79,7 @@ const AcademyStore = () => {
             slidesPerView={4}
             spaceBetween={20}
             navigation={true}
+            pagination={true}
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -90,16 +95,16 @@ const AcademyStore = () => {
               },
             }}
             autoplay={{
-              delay: 1500,
+              delay: 2500,
               disableOnInteraction: false,
             }}
-            modules={[Navigation, Autoplay]}
+            modules={[Navigation, Autoplay , Pagination]}
             className="mySwiper "
           >
             {/* <SwiperBtn /> */}
             {productImg.map((element, index) => {
               return (
-                <SwiperSlide key={index} className="my-5">
+                <SwiperSlide key={index} className="mt-5 sm:mb-5 mb-[40px]">
                   <div className="relative group cursor-pointer">
                     <div className="animation w-[100px] h-[350px] bg-[#F45D71] absolute  top-[-3rem] left-[50%] skew-x-[-15deg] translate-x-[-50%] z-[-1] opacity-0 transition duration-300 group-hover:opacity-100"></div>
                     <div className="p-4 border rounded-[20px] border-white flex items-center justify-center">

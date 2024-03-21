@@ -151,7 +151,7 @@ const NavbarTwo = () => {
           <ul className="list-none flex items-center justify-center flex-col gap-4 w-full   ">
             {navItems.map((element, index) => {
               return (
-                <li>
+                <li key={index}>
                   <Link
                     to={`/${element === "home" ? "" : element}`}
                     className={`uppercase text-[16px] font-primary font-bold transition duration-500 hover:text-sky-500 ${

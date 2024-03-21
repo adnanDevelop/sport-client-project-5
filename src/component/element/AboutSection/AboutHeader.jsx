@@ -14,7 +14,7 @@ const AboutHeader = () => {
           </h1>
         </div>
         <div className="absolute bottom-0  right-0 ">
-          <img src="/image/about/header-img.png" className="lg:max-w-[550px] max-w-[500px] h-auto object-cover" alt="" />
+          <img src="/image/about/header-img.png" className="lg:max-w-[580px] max-w-[500px] h-auto object-cover" alt="" />
         </div>
       </section>
     </main>

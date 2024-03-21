@@ -30,17 +30,16 @@ const MenTeam = () => {
                     <span className="ps-2 text-red">NCL Division 2</span>
                   </h3>
                 </div>
-                <div className="flex items-center justify-between text-white md:text-[25px] sm:text-[20px] text-[16px] px-3 py-2 bg-red font-bold  uppercase mt-4 max-w-[500px] w-full mx-auto">
+                <div className="flex items-center justify-between text-white md:text-[25px] sm:text-[20px] text-[16px] px-3 py-2 bg-red font-semibold  uppercase mt-4 max-w-[500px] w-full mx-auto">
                   <img
                     src="/image/ajfc/team/icon-1.png"
-                    className="w-[20px] object-cover block me-4"
+                    className="w-[20px] object-cover block "
                     alt=""
                   />
-                  accolades :{" "}
-                  <span className="ps-2">forest rec champions 2021</span>
+                  <span className="">accolades :{" "} forest rec champions 2021</span>
                   <img
                     src="/image/ajfc/team/icon-2.png"
-                    className="w-[20px] object-cover block ms-4"
+                    className="w-[20px] object-cover block "
                     alt=""
                   />
                 </div>
@@ -93,7 +92,7 @@ const MenTeam = () => {
                     alt=""
                   />
                   accolades :{" "}
-                  <span className="ps-2">forest rec champions 2021</span>
+                  <span className="ps-s">forest rec champions 2021</span>
                   <img
                     src="/image/ajfc/team/icon-2.png"
                     className="w-[20px] object-cover block ms-4"
@@ -138,17 +137,16 @@ const MenTeam = () => {
                     <span className="ps-2 text-red">NCL Division 2</span>
                   </h3>
                 </div>
-                <div className="flex items-center justify-between text-white md:text-[25px] sm:text-[20px] text-[16px] px-3 py-2 bg-red font-bold  uppercase mt-4 max-w-[500px] w-full mx-auto">
+                <div className="flex items-center justify-between text-white md:text-[25px] sm:text-[20px] text-[16px] px-3 py-2 bg-red font-semibdol  uppercase mt-4 max-w-[500px] w-full mx-auto">
                   <img
                     src="/image/ajfc/team/icon-1.png"
-                    className="w-[20px] object-cover block me-4"
+                    className="w-[20px] object-cover block "
                     alt=""
                   />
-                  accolades :{" "}
-                  <span className="ps-2">forest rec champions 2021</span>
+                  <span className="ps-2 text-[16px]">accolades :{" "} forest rec champions 2021</span>
                   <img
                     src="/image/ajfc/team/icon-2.png"
-                    className="w-[20px] object-cover block ms-4"
+                    className="w-[20px] object-cover block "
                     alt=""
                   />
                 </div>
@@ -244,17 +242,17 @@ const MenTeam = () => {
                     <span className="ps-2 text-white">Division 1</span>
                   </h3>
                 </div>
-                <div className="flex items-center justify-between text-red md:text-[25px] text-[16px] px-3 py-2 bg-white font-bold  uppercase mt-4 max-w-[500px] w-full mx-auto">
+                <div className="flex items-center justify-between text-red md:text-[25px] text-[16px] px-3 py-2 bg-white font-semibold  uppercase mt-4 max-w-[500px] w-full mx-auto">
                   <img
                     src="/image/ajfc/team/icon-red-1.png"
-                    className="w-[20px] object-cover block me-4"
+                    className="w-[20px] object-cover block "
                     alt=""
                   />
                   accolades :{" "}
                   <span className="ps-2">DIVISION 2 champions 2021</span>
                   <img
                     src="/image/ajfc/team/icon-red-2.png"
-                    className="w-[20px] object-cover block ms-4"
+                    className="w-[20px] object-cover block "
                     alt=""
                   />
                 </div>

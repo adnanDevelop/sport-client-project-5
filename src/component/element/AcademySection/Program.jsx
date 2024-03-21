@@ -52,15 +52,15 @@ const Program = () => {
   ];
 
   return (
-    <main>
+    <main className="">
       <section className="text-center">
         <span className="mb-4 red-badge">stories of success</span>
         <h2>PROGRAMMES</h2>
       </section>
       {/* LARGE SECREEN */}
-      <div>
+      <div className="pt-[20px] pb-[10px] program_gradient mt-10">
         {/* FIRST */}
-        <div className="lg:block hidden">
+        <div className="lg:block hidden bg-white">
           <section className="w-full grid grid-cols-12 mt-8">
             <div className="col-span-8 h-[250px] overflow-hidden">
               <img
@@ -100,7 +100,7 @@ const Program = () => {
           )}
         </div>
         {/* SECOND */}
-        <div className="lg:block hidden">
+        <div className="lg:block hidden bg-white">
           <section className="w-full grid grid-cols-12 mt-8">
             <div className="col-span-8 h-[250px] overflow-hidden">
               <img
@@ -140,7 +140,7 @@ const Program = () => {
           )}
         </div>
         {/* THIRD */}
-        <div className="lg:block hidden">
+        <div className="lg:block hidden bg-white">
           <section className="w-full grid grid-cols-12 mt-8">
             <div className="col-span-8 h-[250px] overflow-hidden">
               <img
@@ -180,7 +180,7 @@ const Program = () => {
           )}
         </div>
         {/* FOURTH */}
-        <div className="lg:block hidden">
+        <div className="lg:block hidden bg-white">
           <section className="w-full grid grid-cols-12 mt-8">
             <div className="col-span-8 h-[250px] overflow-hidden">
               <img
@@ -220,7 +220,7 @@ const Program = () => {
           )}
         </div>
         {/* FIFTH */}
-        <div className="lg:block hidden">
+        <div className="lg:block hidden bg-white">
           <section className="w-full grid grid-cols-12 mt-8">
             <div className="col-span-8 h-[250px] overflow-hidden">
               <img
@@ -260,7 +260,7 @@ const Program = () => {
           )}
         </div>
         {/* SIXTH */}
-        <div className="lg:block hidden mb-8">
+        <div className="lg:block hidden bg-white mb-8">
           <section className="w-full grid grid-cols-12 mt-8">
             <div className="col-span-8 h-[250px] overflow-hidden">
               <img
@@ -302,9 +302,9 @@ const Program = () => {
       </div>
 
       {/* SMALL SCREEN */}
-      <div className="lg:hidden block mt-8">
+      <div className="lg:hidden block program_gradient pb-[10px] sm:mb-0  mb-[80px] ">
         {/* FIRST */}
-        <div>
+        <div className="bg-white">
           <div>
             <img
               src="/image/academy/program/img-1.png"
@@ -313,14 +313,16 @@ const Program = () => {
             />
           </div>
           <div className="px-[20px] flex flex-col  my-6 relative">
-            <div className="flex gap-x-7 items-center">
+            <div className="flex gap-x-7 items-center mb-6">
               <div>
                 <span className="mb-3 red-badge">stories of success</span>
-                <h2>YOUTH TRAINING</h2>
+                <h2 className="sm:text-[35px] text-[30px] font-bold">
+                  YOUTH TRAINING
+                </h2>
               </div>
               <button
                 onClick={() => setShowData(!showData)}
-                className={`text-[35px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
+                className={`sm:text-[35px] text-[30px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
                   showData ? "rotate-[0deg] " : "rotate-[180deg] "
                 }`}
               >
@@ -329,7 +331,7 @@ const Program = () => {
             </div>
             {showData && (
               <p
-                className={`text-justify font-secondary  text-[20px] leading-6  py-6 transition duration-300`}
+                className={`text-justify font-secondary  text-[20px] leading-6 pb-6 transition duration-300`}
               >
                 We provide a 'Football 4 Free' service funded by the 'Young
                 Ealing Foundation' which provides FREE Football sessions for
@@ -340,7 +342,7 @@ const Program = () => {
           </div>
         </div>
         {/* SECOND */}
-        <div>
+        <div className="bg-white">
           <div>
             <img
               src="/image/academy/program/img-2.png"
@@ -349,14 +351,16 @@ const Program = () => {
             />
           </div>
           <div className="px-[20px] flex flex-col  mt-6 relative">
-            <div className="flex gap-x-7 items-center">
+            <div className="flex gap-x-7 items-center mb-6">
               <div>
                 <span className="mb-3 red-badge">stories of success</span>
-                <h2>FOOTBALL 4 FREE</h2>
+                <h2 className="sm:text-[35px] text-[30px] font-bold">
+                  FOOTBALL 4 FREE
+                </h2>
               </div>
               <button
                 onClick={() => setShowDataTwo(!showDataTwo)}
-                className={`text-[35px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
+                className={`sm:text-[35px] text-[30px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
                   showDataTwo ? "rotate-[0deg] " : "rotate-[180deg] "
                 }`}
               >
@@ -365,7 +369,7 @@ const Program = () => {
             </div>
             {showDataTwo && (
               <p
-                className={`text-justify font-secondary  text-[20px] leading-6  py-6 transition duration-300`}
+                className={`text-justify font-secondary  text-[20px] leading-6  pb-6 transition duration-300`}
               >
                 We provide a 'Football 4 Free' service funded by the 'Young
                 Ealing Foundation' which provides FREE Football sessions for
@@ -376,7 +380,7 @@ const Program = () => {
           </div>
         </div>
         {/* THIRD */}
-        <div className="mt-6">
+        <div className="mt-6 bg-white">
           <div>
             <img
               src="/image/academy/program/img-3.png"
@@ -385,14 +389,16 @@ const Program = () => {
             />
           </div>
           <div className="px-[20px] flex flex-col  mt-6 relative">
-            <div className="flex gap-x-7 items-center">
+            <div className="flex gap-x-7 items-center mb-6">
               <div>
                 <span className="mb-3 red-badge">stories of success</span>
-                <h2>WEETABIX WILDCATS</h2>
+                <h2 className="sm:text-[35px] text-[30px] font-bold">
+                  WEETABIX WILDCATS
+                </h2>
               </div>
               <button
                 onClick={() => setShowDataThree(!showDataThree)}
-                className={`text-[35px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
+                className={`sm:text-[35px] text-[30px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
                   showDataThree ? "rotate-[0deg] " : "rotate-[180deg] "
                 }`}
               >
@@ -401,7 +407,7 @@ const Program = () => {
             </div>
             {showDataThree && (
               <p
-                className={`text-justify font-secondary  text-[20px] leading-6  py-6 transition duration-300`}
+                className={`text-justify font-secondary  text-[20px] leading-6  pb-6 transition duration-300`}
               >
                 We provide a 'Football 4 Free' service funded by the 'Young
                 Ealing Foundation' which provides FREE Football sessions for
@@ -412,7 +418,7 @@ const Program = () => {
           </div>
         </div>
         {/* FOUR */}
-        <div className="mt-6">
+        <div className="mt-6 bg-white">
           <div>
             <img
               src="/image/academy/program/img-4.png"
@@ -421,14 +427,16 @@ const Program = () => {
             />
           </div>
           <div className="px-[20px] flex flex-col  mt-6 relative">
-            <div className="flex gap-x-7 items-center">
+            <div className="flex gap-x-7 items-center mb-6">
               <div>
                 <span className="mb-3 red-badge">stories of success</span>
-                <h2>AFTER SCHOOL CLUB</h2>
+                <h2 className="sm:text-[35px] text-[30px] font-bold">
+                  AFTER SCHOOL CLUB
+                </h2>
               </div>
               <button
                 onClick={() => setShowDataFour(!showDataFour)}
-                className={`text-[35px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
+                className={`sm:text-[35px] text-[30px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
                   showDataFour ? "rotate-[0deg] " : "rotate-[180deg] "
                 }`}
               >
@@ -437,7 +445,7 @@ const Program = () => {
             </div>
             {showDataFour && (
               <p
-                className={`text-justify font-secondary  text-[20px] leading-6  py-6 transition duration-300`}
+                className={`text-justify font-secondary  text-[20px] leading-6 pb-6 transition duration-300`}
               >
                 We provide a 'Football 4 Free' service funded by the 'Young
                 Ealing Foundation' which provides FREE Football sessions for
@@ -448,7 +456,7 @@ const Program = () => {
           </div>
         </div>
         {/* FIFTH */}
-        <div className="my-6">
+        <div className="my-6 bg-white">
           <div>
             <img
               src="/image/academy/program/img-5.png"
@@ -457,14 +465,16 @@ const Program = () => {
             />
           </div>
           <div className="px-[20px] flex flex-col  mt-6 relative">
-            <div className="flex gap-x-7 items-center">
+            <div className="flex gap-x-7 items-center mb-6">
               <div>
                 <span className="mb-3 red-badge">stories of success</span>
-                <h2>YOUTH TRAINING</h2>
+                <h2 className="sm:text-[35px] text-[30px] font-bold">
+                  YOUTH TRAINING
+                </h2>
               </div>
               <button
                 onClick={() => setShowDataFifth(!showDataFifth)}
-                className={`text-[35px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
+                className={`sm:text-[35px] text-[30px] cursor-pointer transition duration-300 md:absolute left-[40%] top-[2rem] ${
                   showDataFifth ? "rotate-[0deg] " : "rotate-[180deg] "
                 }`}
               >
@@ -473,7 +483,7 @@ const Program = () => {
             </div>
             {showDataFifth && (
               <p
-                className={`text-justify font-secondary  text-[20px] leading-6  py-6 transition duration-300`}
+                className={`text-justify font-secondary  text-[20px] leading-6 pb-6 transition duration-300`}
               >
                 We provide a 'Football 4 Free' service funded by the 'Young
                 Ealing Foundation' which provides FREE Football sessions for
@@ -485,13 +495,23 @@ const Program = () => {
         </div>
       </div>
 
-
-      <div className="ms-[20px] my-[30px] bg-red w-[300px] p-4 flex items-center justify-between">
+      {/* LOGO SECTION */}
+     <div className="sm:block hidden">
+     <div className="ms-[20px] my-[30px] bg-red w-[300px] p-4 flex items-center justify-between">
         <div>
-          <img className="w-[100px]" src="/image/academy/program/logo-one.png" alt="" />
+          <img
+            className="w-[100px]"
+            src="/image/academy/program/logo-one.png"
+            alt=""
+          />
         </div>
-        <img className="h-[80px]" src="/image/academy/program/logo-two.png" alt="" />
+        <img
+          className="h-[80px]"
+          src="/image/academy/program/logo-two.png"
+          alt=""
+        />
       </div>
+     </div>
     </main>
   );
 };

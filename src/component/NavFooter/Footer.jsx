@@ -35,14 +35,19 @@ const Footer = () => {
               alt=""
             />
             <div className="flex items-center flex-wrap md:justify-start justify-center md:gap-x-4 gap-x-20 md:gap-y-0 gap-y-4 md:mt-10 mt-4">
+            <img
+                src="/image/footer/img-3.png"
+                className="w-auto md:h-[50px] h-[35px] object-cover sm:hidden block"
+                alt=""
+              />
               <img
                 src="/image/footer/img-2.png"
-                className="w-auto md:h-[75px] h-[55px] object-cover"
+                className="w-auto md:h-[55px] h-[35px] object-cover"
                 alt=""
               />
               <img
                 src="/image/footer/img-3.png"
-                className="w-auto md:h-[45px] h-[35px] object-cover"
+                className="w-auto md:h-[50px] h-[35px] object-cover sm:block hidden"
                 alt=""
               />
               <img
@@ -50,7 +55,7 @@ const Footer = () => {
                 className="w-auto md:h-[75px] h-[55px] object-cover"
                 alt=""
               />
-                <img
+              <img
                 src="/image/footer/img-3.png"
                 className="w-auto md:h-[45px] h-[35px] object-cover md:hidden block"
                 alt=""

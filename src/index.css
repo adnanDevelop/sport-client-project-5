@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -71,8 +71,16 @@
   background-size: cover; /* Optionally add this to cover the entire element */
 }
 
+.program_gradient {
+  background-image: linear-gradient(
+    to left,
+    rgba(227, 28, 35, 1),
+    rgba(125, 15, 19, 1)
+  );
+}
+
 .hospitality-gradient {
-  background-image: linear-gradient(to bottom , #c20d25ef , #000);
+  background-image: linear-gradient(to bottom, #c20d25ef, #000);
 }
 
 .join-img {
@@ -103,14 +111,38 @@
     url("/public/image/store/header-bg.jpeg") no-repeat center;
   background-size: cover;
 }
+.swiper-pagination {
+  display: none !important;
+}
+
 
 @media (max-width: 998px) {
   .model-content {
     clip-path: none;
   }
+ 
 }
 @media (max-width: 576px) {
   .join-img {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 60%);
   }
+  .swiper-pagination {
+    display: block !important;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0rem !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color:#fff !important;
+  }
+
 }
